@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from './components/Button';
+import ButtonGroup from './components/ButtonGroup';
 
 function App() {
+  // const userData = [
+  //   { id: 1, name: 'kareem', email: 'kareem@email.com', age: 30 },
+  //   { id: 2, name: 'amr', email: 'amr@email.com', age: 30 },
+  //   { id: 3, name: 'wafaa', email: 'wafaa@email.com', age: 32 },
+  //   { id: 4, name: 'safaa', email: 'safaa@email.com', age: 33 },
+  // ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <ButtonGroup>
+        <Button />
+      </ButtonGroup>
     </div>
   );
 }
