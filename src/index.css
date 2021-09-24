@@ -35,4 +35,9 @@ body {
 .button {
   border: 3px solid #554348;
   padding: 10px;
+  margin: 10px;
+}
+
+.group {
+  background-color: #93b7be;
 }
