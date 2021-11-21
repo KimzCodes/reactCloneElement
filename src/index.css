@@ -10,16 +10,25 @@ body {
   align-items: center;
 }
 
+* {
+  padding: 0
+}
+
 .list {
-  margin: 100px;
-  width: 600px;
+
+  display: flex;
 }
 
 .shapeOne {
-  width: 100%;
+  width: 100px;
+  height: 100px;
   background-color: #93b7be;
-  padding: 5px;
-  border-bottom: 3px solid #554348;
+  border: 3px solid #554348;
+  border-radius: 50%;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .shapeTwo {
@@ -30,6 +39,8 @@ body {
   border-radius: 10px;
   margin: 20px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button {
@@ -40,4 +51,8 @@ body {
 
 .group {
   background-color: #93b7be;
+}
+
+ul{
+  list-style-type: none;
 }

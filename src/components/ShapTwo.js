@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ShapTwo = (props) => {
+const ShapTwo = ({ item }) => {
   return (
     <div className='shapeTwo'>
       <ul>
-        <li>data</li>
-        <li>data</li>
+        <li>{item.name}</li>
+        <li>{item.age}</li>
       </ul>
     </div>
   );

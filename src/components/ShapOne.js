@@ -1,11 +1,12 @@
 import React from 'react';
 
-const ShapOne = (props) => {
+const ShapOne = ({ item }) => {
+  console.log(item);
   return (
     <div className='shapeOne'>
       <ul>
-        <li>data</li>
-        <li>data</li>
+        <li>{item.name}</li>
+        <li>{item.age}</li>
       </ul>
     </div>
   );
