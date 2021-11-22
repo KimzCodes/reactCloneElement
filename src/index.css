@@ -11,12 +11,12 @@ body {
 }
 
 * {
-  padding: 0
+  padding: 0;
 }
 
 .list {
-
   display: flex;
+  flex-direction: row;
 }
 
 .shapeOne {
@@ -53,6 +53,6 @@ body {
   background-color: #93b7be;
 }
 
-ul{
+ul {
   list-style-type: none;
 }

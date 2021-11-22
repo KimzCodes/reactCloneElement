@@ -1,11 +1,10 @@
 import React from 'react';
 
 const List = ({ children, items }) => {
-  const dataHandler = items.map((item) =>
-    React.cloneElement(children, { key: item.id, item })
+  const child = items.map((el) =>
+    React.cloneElement(children, { item: el, key: el.id })
   );
-
-  return <div className='list'>{dataHandler}</div>;
+  return <div className='list'>{child}</div>;
 };
 
 export default List;

@@ -10,19 +10,17 @@ function App() {
     { id: 4, name: 'safaa', email: 'safaa@email.com', age: 33 },
   ];
 
-  const userData2 = [
-    { id: 1, name: 'aly', email: 'kareem@email.com', age: 30 },
-    { id: 2, name: 'hesham', email: 'amr@email.com', age: 30 },
-  ];
-
   return (
     <div className='App'>
       <List items={userData}>
         <ShapOne />
       </List>
-      <List items={userData2}>
+
+      <List items={userData}>
         <ShapTwo />
       </List>
+
+      <ShapOne item={userData[0]} />
     </div>
   );
 }
