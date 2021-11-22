@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ShapOne = ({ item }) => {
-  console.log(item);
   return (
     <div className='shapeOne'>
       <ul>
