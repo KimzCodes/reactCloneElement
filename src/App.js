@@ -1,4 +1,4 @@
-import List from './components/List';
+import SwiperCarousel from './components/SwiperCarousel';
 import ShapOne from './components/ShapOne';
 import ShapTwo from './components/ShapTwo';
 
@@ -10,19 +10,20 @@ function App() {
     { id: 4, name: 'safaa', email: 'safaa@email.com', age: 33 },
   ];
 
-  const userData2 = [
-    { id: 1, name: 'aly', email: 'kareem@email.com', age: 30 },
-    { id: 2, name: 'hesham', email: 'amr@email.com', age: 30 },
-  ];
+  // const userData2 = [
+  //   { id: 1, name: 'aly', email: 'kareem@email.com', age: 30 },
+  //   { id: 2, name: 'hesham', email: 'amr@email.com', age: 30 },
+  // ];
 
   return (
     <div className='App'>
-      <List items={userData}>
+      <SwiperCarousel items={userData}>
         <ShapOne />
-      </List>
-      <List items={userData2}>
+      </SwiperCarousel>
+
+      <SwiperCarousel items={userData}>
         <ShapTwo />
-      </List>
+      </SwiperCarousel>
     </div>
   );
 }
